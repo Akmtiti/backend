@@ -1,0 +1,39 @@
+
+POST https://ska-pfe-server.herokuapp.com/login HTTP/1.1
+content-type: application/json
+
+{
+"email": "denguezli.iskander@gmail.com",
+"password": "4ac43887d368b0ce13ca14e2e1fc717b5415fab4c0caf8087f1b6f088f8c22fa"
+}
+
+###
+
+POST https://ska-pfe-server.herokuapp.com/token HTTP/1.1
+content-type: application/json
+
+{
+"refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNrYUFkbWluIiwiaWF0IjoxNjQ5MDg5NjQ1LCJleHAiOjE2NDkwOTMyNDV9.g1ejmXDzQeqLYZ5F2-7LqxiVrF9Ue3oyDMPWq82MPqo"
+}
+
+
+
+
+
+###
+POST http://localhost:8001/authentification/device HTTP/1.1
+content-type: application/json
+
+{
+"username": "Device 1",
+"password": "{(t!z=NPDF27QzXU"
+}
+
+###
+DELETE http://localhost:8001/deleteUser HTTP/1.1
+content-type: application/json
+
+{
+"username": "Device 1"
+}
+

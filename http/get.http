@@ -1,0 +1,13 @@
+
+GET http://localhost:8001/getAllSensor 
+Authorization: :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Iklza2FuZGVyIERlbmd1ZXpsaSIsImlhdCI6MTY0ODgyMzQ2NiwiZXhwIjoxNjQ4ODIzNDk2fQ.hD3vH0i4EZk33uQ_Ls2dwutyRxI9fOrEAN7tzX6B1Mk
+content-type: application/json
+
+###
+GET http://localhost:8001/getUsers 
+Authorization: :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNrYUFkbWluIiwiaWF0IjoxNjUwMDEzMTEwLCJleHAiOjE2NTAwMTM0MTB9.BXYX6QeOfD2tCWp98XvwbRAIYSUqo_-jNgwkOkgcTYE
+###
+GET http://localhost:8001/getUser/notification?username=SkaAdmin
+###
+GET http://localhost:8001/getUser/notification?username=SkaAdmin&date=2022-04-15&sensorType=Capteur de Mouvement
+###
